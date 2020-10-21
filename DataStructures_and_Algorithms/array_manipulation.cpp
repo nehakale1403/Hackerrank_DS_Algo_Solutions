@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// Complete the arrayManipulation function below.
 long arrayManipulation(int n,int m, int queries[][3]) {
 
     long arr[n+1];
@@ -53,3 +52,5 @@ int main()
 
     return 0;
 }
+
+//getting segmentation error for some of the test cases!
