@@ -54,3 +54,30 @@ int main()
 }
 
 //getting segmentation error for some of the test cases!
+
+//array manipulation only in the main function
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    int size, m, a,b,k;
+    cin>>size>>m;
+    int n[size+1] = {0};
+    
+    for(int i=0; i<m; i++){
+        cin>>a>>b>>k;
+        for(int j=a; j<=b; j++){
+            n[j]+=k;
+        }
+    }
+    int max = n[0];
+    for(int i=1; i<size+1; i++){
+        if(n[i]> max){
+            max = n[i];
+        }
+    }
+    cout<<max;
+    
+}
