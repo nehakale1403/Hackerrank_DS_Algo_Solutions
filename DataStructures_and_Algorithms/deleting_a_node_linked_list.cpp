@@ -73,13 +73,18 @@ SinglyLinkedListNode* deleteNode(SinglyLinkedListNode* head, int position) {
     if(head == NULL){
         return 0;
     }
+
     if(head->next == NULL){
         head = NULL;
         return(head);
     }
+    if(position == 0){
+        head = head->next;
+        return(head);
+    }
 
     SinglyLinkedListNode *p = head, *q = NULL;
-    for(int i=1; i<=position; i++){
+    for(int i=0; i<position; i++){
         q = p;
         p = p->next;
     }
