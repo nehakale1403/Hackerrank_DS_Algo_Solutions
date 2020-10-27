@@ -60,20 +60,20 @@ int main()
 #include<iostream>
 using namespace std;
 
-int main(){
+long main(){
     
-    int size, m, a,b,k;
+    long size, m, a,b,k;
     cin>>size>>m;
-    int n[size+1] = {0};
+    long n[size+1] = {0};
     
-    for(int i=0; i<m; i++){
+    for(long i=0; i<m; i++){
         cin>>a>>b>>k;
-        for(int j=a; j<=b; j++){
+        for(long j=a; j<=b; j++){
             n[j]+=k;
         }
     }
-    int max = n[0];
-    for(int i=1; i<size+1; i++){
+    long max = n[0];
+    for(long i=1; i<size+1; i++){
         if(n[i]> max){
             max = n[i];
         }
