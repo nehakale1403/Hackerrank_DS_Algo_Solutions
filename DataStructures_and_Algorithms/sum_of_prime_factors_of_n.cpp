@@ -1,0 +1,1 @@
+//to find tthe sum of all the prime factors from a given number
