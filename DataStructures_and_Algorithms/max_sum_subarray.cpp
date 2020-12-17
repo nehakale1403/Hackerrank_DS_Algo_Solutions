@@ -15,6 +15,8 @@ int main(){
 	int max_current, max_global;
 	max_current = max_global = arr[0];
 
+	//kedans aldorithm
+
 	for(int i = 0; i<size; i++){
 
 		
