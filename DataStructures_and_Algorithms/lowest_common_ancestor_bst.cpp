@@ -32,15 +32,6 @@ class Solution {
                return root;
            }
         }
-
-/*The tree node has data, left child and right child 
-class Node {
-    int data;
-    Node* left;
-    Node* right;
-};
-
-*/
   
     Node *lca(Node *root, int v1,int v2) {
 		// Write your code here.
